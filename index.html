@@ -1,0 +1,275 @@
+<<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Венераның веб-әзірлеу портфолиосы">
+    <title>Венера | Портфолио</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #243047;
+            background-color: #f5f7fb;
+        }
+
+        .container {
+            width: min(1100px, 90%);
+            margin: 0 auto;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 12px rgba(20, 35, 60, 0.08);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 16px 0;
+        }
+
+        .logo {
+            color: #3658c9;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .nav-links a {
+            color: #243047;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: #3658c9;
+        }
+
+        .hero {
+            padding: 100px 0;
+            color: #ffffff;
+            background: linear-gradient(135deg, #2849b8, #7955c8);
+        }
+
+        .hero h1 {
+            margin: 0 0 15px;
+            font-size: clamp(36px, 6vw, 58px);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 0 30px;
+            font-size: 19px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 9px;
+            color: #2849b8;
+            background-color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .button:hover,
+        .button:focus-visible {
+            background-color: #e9edff;
+        }
+
+        main section {
+            padding: 65px 0;
+        }
+
+        h2 {
+            margin: 0 0 22px;
+            font-size: 30px;
+        }
+
+        .about-text {
+            max-width: 750px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 25px;
+            border-radius: 14px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 20px rgba(20, 35, 60, 0.07);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #3658c9;
+        }
+
+        .card p {
+            margin-bottom: 0;
+        }
+
+        .contact {
+            background-color: #e9edff;
+        }
+
+        .contact a {
+            color: #2849b8;
+            font-weight: bold;
+        }
+
+        .site-footer {
+            padding: 24px 0;
+            color: #ffffff;
+            background-color: #243047;
+            text-align: center;
+        }
+
+        .site-footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .nav {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .nav-links {
+                gap: 10px 16px;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            main section {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="container nav" aria-label="Негізгі мәзір">
+            <a class="logo" href="#home">Венера</a>
+
+            <div class="nav-links">
+                <a href="#about">Мен туралы</a>
+                <a href="#skills">Дағдыларым</a>
+                <a href="#projects">Жобаларым</a>
+                <a href="#contact">Байланыс</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Сәлем! Мен Венера 👋</h1>
+                <p>Мен веб-бағдарламалауды үйреніп жүрмін және өз жобаларымды жасап тәжірибе жинақтаудамын.</p>
+                <a class="button" href="#projects">Жобаларымды көру</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Мен туралы</h2>
+                <p class="about-text">
+                    Мен HTML, CSS және JavaScript негіздерін үйреніп жүрмін.
+                    VS Code көмегімен веб-беттер жасаймын, ал Git пен GitHub
+                    құралдарын меңгерудемін. Мақсатым — қолдануға ыңғайлы
+                    әрі әдемі сайттар құрастыру.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Дағдыларым</h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>HTML</h3>
+                        <p>Веб-беттің құрылымын жасаймын.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>CSS</h3>
+                        <p>Бетті безендіріп, телефон экранына бейімдеймін.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>JavaScript</h3>
+                        <p>Интерактивті мүмкіндіктерді үйреніп жүрмін.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Git және GitHub</h3>
+                        <p>Код нұсқаларын сақтауды меңгерудемін.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Менің жобаларым</h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>Жеке портфолио</h3>
+                        <p>Мен туралы ақпарат пен дағдыларымды көрсететін осы веб-бет.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Келесі жоба</h3>
+                        <p>Жаңа жоба жасаған кезде оның атауы мен сипаттамасын осы жерге қосамын.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Байланыс</h2>
+                <p>Байланыс деректерімді жақында қосамын.</p>
+                <!-- Электрондық поштаңыз дайын болғанда, төмендегі жолды өзгертіп қолданыңыз:
+                <p>Пошта: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Венера. Барлық құқықтар қорғалған.</p>
+        </div>
+    </footer>
+</body>
+</html>
